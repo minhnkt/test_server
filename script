@@ -2,7 +2,7 @@
 #######################################################
 # Linux Server Benchmarks v1.2
 # Run speed test: 
-# curl -Lso- domain.net | bash
+# curl -L https://raw.githubusercontent.com/minhnkt/test_server/master/script | bash 
 #######################################################
 if  [ ! -e '/usr/bin/wget' ]; then
 	yum clean all && yum install -y epel-release && yum install -y wget || (  apt-get update && apt-get install -y wget )
