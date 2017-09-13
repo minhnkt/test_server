@@ -5,12 +5,12 @@
 # curl -L https://raw.githubusercontent.com/minhnkt/test_server/master/script | bash 
 #######################################################
 if  [ ! -e '/usr/bin/wget' ]; then
-#	yum clean all && yum install -y epel-release && yum install -y wget || (  apt-get update && apt-get install -y wget )
-	yum install -y epel-release && yum install -y wget || (  apt-get update && apt-get install -y wget )
+	yum clean all && yum install -y epel-release && yum install -y wget || (  apt-get update && apt-get install -y wget )
+#	yum install -y epel-release && yum install -y wget || (  apt-get update && apt-get install -y wget )
 fi
 if  [ ! -e '/usr/bin/fio' ]; then
-#	yum clean all && yum install -y epel-release && yum install -y fio || (  apt-get update && apt-get install -y fio )
-	yum install -y epel-release && yum install -y fio || (  apt-get update && apt-get install -y fio )
+	yum clean all && yum install -y epel-release && yum install -y fio || (  apt-get update && apt-get install -y fio )
+#	yum install -y epel-release && yum install -y fio || (  apt-get update && apt-get install -y fio )
 fi
 
 # Colors
