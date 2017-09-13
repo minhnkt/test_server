@@ -2,7 +2,8 @@
 #######################################################
 # Linux Server Benchmarks v1.2
 # Run speed test: 
-# curl -L https://raw.githubusercontent.com/minhnkt/test_server/master/script | bash 
+# wget https://raw.githubusercontent.com/minhnkt/test_server/master/script && chmod +x script && ./script 
+# curl -L https://raw.githubusercontent.com/minhnkt/test_server/master/script_source | bash
 #######################################################
 if  [ ! -e '/usr/bin/wget' ]; then
 	yum clean all && yum install -y epel-release && yum install -y wget || (  apt-get update && apt-get install -y wget )
